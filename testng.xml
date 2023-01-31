@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="2">
+  <test thread-count="5" name="Test" parallel="classes">
+  
+  <groups>
+   			<run>
+   				<exclude name = "demo1"></exclude>
+   				<exclude name = "demo2"></exclude>
+   			</run>
+   		</groups>
+   		
+    <classes>
+      <class name="testngConcept.Class0"/>
+      <class name="testngConcept.Class2"/>
+      <class name="testngConcept.Class1"/>
+      <class name="testngConcept.Class4"/>
+      <class name="testngConcept.Class3"/>
+      <class name="testngConcept.Class5"/>
+      
+    </classes>
+    </test>
+    <test thread-count="2" name="Test1" parallel="false">
+    <classes>
+     
+      <class name="testngConcept.Class6"/>
+      <class name="testngConcept.Class8"/>
+      <class name="testngConcept.Class7"/>
+      <class name="testngConcept.Class9"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
